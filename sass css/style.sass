@@ -1,0 +1,309 @@
+$bright-color: #fff
+$dark-color: #3c3c3c
+$overlay-color: rgba(0, 0, 0, 0.5)
+
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700&subset=latin-ext")
+
+*
+  box-sizing: border-box
+
+body
+  font-family: 'Lato', sans-serif
+
+.invisible
+  opacity: 0
+
+.visible
+  opacity: 1
+
+.hero
+  background-image: url(../images/hero%20clear%20Layer%208.jpg)
+  background-position: center
+  background-repeat: no-repeat
+  background-size: cover
+  background-attachment: fixed
+  margin-bottom: 50px
+
+.hero-content
+  color: $bright-color
+  text-transform: uppercase
+  text-align: center
+  padding-bottom: 115px
+  padding-top: 286px
+  h1
+    font-size: 54px
+    font-weight: 700
+    margin: 0
+    padding-bottom: 53px
+  p
+    padding-bottom: 240px
+    margin: 0
+    padding-left: 320px
+    padding-right: 320px
+
+.big-icon img
+  max-width: 65px
+  padding-bottom: 94px
+
+.small-icon img
+  max-width: 23px
+
+/*second
+
+.content-container-dark
+  color: $dark-color
+  border-right: 2px solid $dark-color
+  border-left: 2px solid $dark-color
+  border-bottom: 2px solid $dark-color
+  max-width: 902px
+  padding: 76px 170px
+  margin: 0 auto
+  text-align: center
+  font-size: 16px
+  line-height: 24px
+  margin-bottom: 114px
+  position: relative
+  &::before, &::after
+    content: ""
+    width: 30%
+    position: absolute
+    top: 0px
+    border-top: 2px solid $dark-color
+  &::before
+    left: 0
+  &::after
+    right: 0
+
+.main-dark
+  margin: 0 auto
+  position: relative
+  text-align: center
+  top: 20px
+  line-height: 40px
+  h2
+    font-size: 40px
+    margin: 0
+    text-transform: uppercase
+    font-weight: 700
+
+.content-down
+  margin: 0
+  padding-left: 80px
+  padding-right: 80px
+
+/*third
+
+.thin-bg
+  background-image: url(../images/services.jpg)
+  background-position: center
+  background-repeat: no-repeat
+  background-size: cover
+  background-attachment: fixed
+  margin-bottom: 119px
+  padding-top: 100px
+  padding-bottom: 124px
+
+.content-container-bright
+  color: $bright-color
+  border-right: 2px solid $bright-color
+  border-left: 2px solid $bright-color
+  border-bottom: 2px solid $bright-color
+  max-width: 902px
+  padding-top: 80px
+  padding-left: 170px
+  padding-right: 170px
+  padding-bottom: 60px
+  margin: 0 auto
+  text-align: center
+  font-size: 16px
+  line-height: 26px
+  position: relative
+  &::before, &::after
+    content: ""
+    width: 30%
+    position: absolute
+    top: 0px
+    border-top: 2px solid $bright-color
+  &::before
+    left: 0
+  &::after
+    right: 0
+
+.up
+  margin: 0 auto
+  max-width: 902px
+  color: $bright-color
+  position: relative
+  top: 20px
+  h2
+    text-align: center
+    margin: 0
+    font-size: 40px
+    text-transform: uppercase
+    line-height: 40px
+    font-weight: 700
+
+/*fourth
+
+.icon-dark
+  padding-bottom: 41px
+  padding-top: 109px
+  img
+    max-width: 80px
+
+.content-container-dark h3
+  text-transform: uppercase
+  margin: 0
+  padding-bottom: 40px
+
+/*fifth
+
+.gallery .col-md-4
+  padding: 5px
+
+.photo
+  position: relative
+  img
+    width: 100%
+    overflow: hidden
+  &:hover .overlay
+    opacity: 1
+    cursor: pointer
+
+.bottom-left
+  position: absolute
+  bottom: 5px
+  left: 10px
+  p
+    font-size: 34px
+    font-weight: 700
+    text-transform: uppercase
+    color: $bright-color
+    margin: 0
+
+.overlay
+  position: absolute
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  height: 100%
+  width: 100%
+  opacity: 0
+  transition: .5s ease
+  background-color: $overlay-color
+
+/*sixth
+
+.contact-us
+  padding-top: 138px
+
+.content-container-dark .btn-contact
+  border: none
+  text-transform: uppercase
+  background-color: $dark-color
+  width: 391px
+  height: 54px
+  line-height: 54px
+  color: $bright-color
+  font-weight: 400
+  display: inline-block
+  margin-top: 42px
+  transition: .3s
+  &:hover
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19)
+
+/*footer
+
+.footer-icon
+  padding-right: 36px
+  img
+    max-width: 35px
+
+.footer-content
+  display: flex
+  justify-content: center
+  align-items: baseline
+  padding-bottom: 74px
+  padding-top: 20px
+  font-size: 14px
+
+/*media queries
+
+@media screen and (max-width: 991px) and (min-width: 768px)
+  /*first-hero
+  .hero-content p
+    padding-left: 100px
+    padding-right: 100px
+  /*second
+  .content-down
+    padding-left: 50px
+    padding-right: 50px
+  .content-container-dark
+    &::before, &::after
+      width: 22%
+  /*third
+  .content-container-bright
+    &::before, &::after
+      width: 22%
+
+@media screen and (max-width: 767px)
+  /*first-hero
+  .hero-content
+    h1
+      font-size: 40px
+    p
+      padding-left: 10px
+      padding-right: 10px
+      font-size: 18px
+  /*second
+  .content-container-dark
+    border: none
+    padding: 26px 10px
+    margin-bottom: 30px
+    &::before, &::after
+      display: none
+  .main-dark
+    position: static
+    line-height: 24px
+    h2
+      font-size: 24px
+  .content-down
+    padding-left: 0px
+    padding-right: 0px
+  /*third
+  .thin-bg
+    margin-bottom: 50px
+    padding-top: 50px
+    padding-bottom: 50px
+  .content-container-bright
+    border: none
+    padding-top: 40px
+    padding-left: 0px
+    padding-right: 0px
+    padding-bottom: 0px
+  .up
+    position: static
+    h2
+      font-size: 24px
+      line-height: 24px
+  .content-container-bright
+    &::before, &::after
+      display: none
+  /*fourth
+  .icon-dark, .contact-us
+    padding-top: 50px
+  /*fifth
+  /*sixth
+  .content-container-dark .btn-contact
+    width: 220px
+  /*footer
+  .footer-icon
+    padding-right: 0px
+    padding-bottom: 20px
+  .footer-content
+    display: block
+    text-align: center
+    padding-bottom: 30px
+
+/*# sourceMappingURL= style.css.map
